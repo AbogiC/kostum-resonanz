@@ -1,0 +1,149 @@
+{
+  "identity": {
+    "persona": "E1: The Anti-AI Designer",
+    "mission": "Create an elegant, theatrical, and sophisticated costume rental platform that feels like a high-end fashion house or opera backstage.",
+    "principles": [
+      "Fusion over Imitation: Mix Theater Drama with High-Fashion E-commerce.",
+      "Emotion First: Every interaction should feel 'precious' and 'dramatic'.",
+      "Content is King: Costumes are the heroes; UI is the stage.",
+      "Negative Space: Use deep dark space to let the costumes shine."
+    ]
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Playfair Display, serif",
+      "usage": "All section headers, hero titles, and featured costume names.",
+      "classes": "font-serif tracking-tight"
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "usage": "Descriptions, UI elements, buttons, and inputs.",
+      "classes": "font-sans tracking-normal"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-medium leading-none",
+      "h2": "text-4xl md:text-5xl font-normal",
+      "h3": "text-2xl md:text-3xl font-normal",
+      "body": "text-base md:text-lg leading-relaxed"
+    }
+  },
+  "colors": {
+    "theme": "Jewel & Luxury (Dark Mode Focus)",
+    "palette": {
+      "background": {
+        "default": "#02040a",
+        "paper": "#0f1116",
+        "subtle": "#1a1d24"
+      },
+      "primary": {
+        "default": "#D4AF37",
+        "foreground": "#000000",
+        "hover": "#B5952F"
+      },
+      "secondary": {
+        "default": "#1e293b",
+        "foreground": "#ffffff"
+      },
+      "accent": {
+        "default": "#500724",
+        "foreground": "#ffffff"
+      },
+      "text": {
+        "primary": "#f8f9fa",
+        "secondary": "#94a3b8",
+        "muted": "#64748b"
+      },
+      "border": {
+        "default": "#27272a",
+        "active": "#D4AF37"
+      }
+    },
+    "gradients": {
+      "hero_overlay": "linear-gradient(to bottom, rgba(2,4,10,0) 0%, rgba(2,4,10,1) 100%)",
+      "gold_glow": "radial-gradient(circle at center, rgba(212, 175, 55, 0.15) 0%, rgba(0,0,0,0) 70%)"
+    }
+  },
+  "visual_enhancers": {
+    "surfaces": {
+      "glass_card": "bg-white/5 backdrop-blur-md border border-white/10 shadow-xl",
+      "solid_card": "bg-[#0f1116] border border-white/5"
+    },
+    "borders": {
+      "precious": "border border-[#D4AF37]/30",
+      "subtle": "border border-white/10"
+    },
+    "shadows": {
+      "glow": "0 0 20px -5px rgba(212, 175, 55, 0.3)",
+      "deep": "0 20px 40px -10px rgba(0,0,0,0.5)"
+    },
+    "textures": {
+      "noise": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E\")"
+    }
+  },
+  "layout_strategies": {
+    "marketing": {
+      "grid": "Mode A: The Tetris Grid",
+      "gap": "gap-8 md:gap-12",
+      "container": "max-w-7xl mx-auto px-6 md:px-12"
+    },
+    "dashboard": {
+      "grid": "Mode B: The Control Room",
+      "gap": "gap-4",
+      "container": "max-w-[1600px] mx-auto px-4 md:px-6"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#D4AF37] text-black hover:bg-[#B5952F] rounded-sm font-medium px-8 py-3 transition-all duration-300",
+      "outline": "bg-transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black rounded-sm px-8 py-3 transition-all duration-300",
+      "ghost": "text-white/70 hover:text-white hover:bg-white/5 rounded-sm px-4 py-2"
+    },
+    "cards": {
+      "product": "group relative overflow-hidden rounded-sm border border-white/10 bg-[#0f1116] transition-all hover:border-[#D4AF37]/50",
+      "feature": "relative overflow-hidden rounded-md bg-white/5 backdrop-blur-sm border border-white/10 p-8"
+    },
+    "inputs": {
+      "default": "bg-white/5 border-white/10 text-white placeholder:text-white/30 focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] rounded-sm h-12"
+    }
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1707547707885-f8e23fc58192?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHx0aGVhdHJpY2FsJTIwY29zdHVtZXMlMjBkcmFtYXRpYyUyMGxpZ2h0aW5nfGVufDB8fHx8MTc2NTMzMjE4OXww&ixlib=rb-4.1.0&q=85",
+      "description": "Group of people on stage with dramatic lighting",
+      "category": "hero"
+    },
+    "featured_costumes": [
+      {
+        "url": "https://images.unsplash.com/photo-1660862903579-d48ab8cf7803?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwyfHx2aW50YWdlJTIwdmljdG9yaWFuJTIwZHJlc3MlMjBtYW5uZXF1aW58ZW58MHx8fHwxNzY1MzMyMTkwfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Vintage Victorian Dress on Mannequin",
+        "category": "catalog"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1745282794652-b30c49cf35b8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwxfHxiYWxsZXQlMjB0dXR1JTIwc3BvdGxpZ2h0fGVufDB8fHx8MTc2NTMzMjE5M3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Ballerina performing in spotlight",
+        "category": "catalog"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1647187835067-a58451e3edf6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwyfHxiYWxsZXQlMjB0dXR1JTIwc3BvdGxpZ2h0fGVufDB8fHx8MTc2NTMzMjE5M3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Dramatic figure in dark room",
+        "category": "catalog"
+      }
+    ],
+    "atmosphere": {
+      "url": "https://images.unsplash.com/photo-1715019450175-ce526f39f133?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHx0aGVhdHJpY2FsJTIwY29zdHVtZXMlMjBkcmFtYXRpYyUyMGxpZ2h0aW5nfGVufDB8fHx8MTc2NTMzMjE4OXww&ixlib=rb-4.1.0&q=85",
+      "description": "Man holding fire, dramatic lighting",
+      "category": "about"
+    }
+  },
+  "universal_guidelines": [
+    "Do not use gradients for backgrounds; use deep solid colors or subtle noise textures.",
+    "Avoid 'Inter' font for headings. Use 'Playfair Display'.",
+    "Use 2-3x more padding than usual. Luxury = Space.",
+    "All interactive elements must have a hover state that changes color or opacity.",
+    "Do not center text by default. Use strong left alignment for body text.",
+    "Use 'sonner' for toasts.",
+    "Use 'lucide-react' for icons.",
+    "Ensure all interactive elements have 'data-testid' attributes."
+  ],
+  "instructions_to_main_agent": "You are building a high-end costume rental platform. Think 'Vogue meets The Royal Opera House'. Use the provided colors and fonts strictly. Implement the 'Tetris Grid' for the landing page. Use the 'Glass Card' style for costume listings. Ensure the 'Gold' accent is used sparingly for maximum impact."
+}
