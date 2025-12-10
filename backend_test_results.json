@@ -1,0 +1,171 @@
+{
+  "summary": {
+    "tests_run": 14,
+    "tests_passed": 12,
+    "success_rate": 85.71428571428571
+  },
+  "results": [
+    {
+      "test": "User Registration",
+      "success": true,
+      "details": "",
+      "response_data": {
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlcl8wMjExMTRAdGVzdC5jb20iLCJleHAiOjE3Njc5MjQ2NzR9.xGyoNjF63knOySpBFT5bPfOoAsnPu49uWmfkvsggOUI",
+        "token_type": "bearer",
+        "user": {
+          "email": "testuser_021114@test.com",
+          "name": "Test User",
+          "role": "user",
+          "created_at": "2025-12-10T02:11:14.867519Z"
+        }
+      }
+    },
+    {
+      "test": "Admin Login",
+      "success": true,
+      "details": "",
+      "response_data": {
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkB0aGVhdHJpY2FsLmNvbSIsImV4cCI6MTc2NzkyNDY3NX0.IOyw5E_tBHknARTzqZQ6B8FDyt7I5iegdrWwUp1K45I",
+        "token_type": "bearer",
+        "user": {
+          "email": "admin@theatrical.com",
+          "name": "Admin User",
+          "role": "admin",
+          "created_at": "2025-12-10T02:11:15.311837Z"
+        }
+      }
+    },
+    {
+      "test": "User Login",
+      "success": true,
+      "details": "",
+      "response_data": {
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlcl8wMjExMTRAdGVzdC5jb20iLCJleHAiOjE3Njc5MjQ2NzV9.4O1DIPjF7aSdwqJDyYYmfV_XZhLLdtfeh0yy3G-sSRw",
+        "token_type": "bearer",
+        "user": {
+          "email": "testuser_021114@test.com",
+          "name": "Test User",
+          "role": "user",
+          "created_at": "2025-12-10T02:11:15.816389Z"
+        }
+      }
+    },
+    {
+      "test": "Get Current User",
+      "success": true,
+      "details": "",
+      "response_data": {
+        "email": "testuser_021114@test.com",
+        "name": "Test User",
+        "role": "user",
+        "created_at": "2025-12-10T02:11:14.842586Z"
+      }
+    },
+    {
+      "test": "Get Costumes",
+      "success": true,
+      "details": "Found 6 costumes",
+      "response_data": {
+        "count": 6
+      }
+    },
+    {
+      "test": "Search Costumes by Category",
+      "success": true,
+      "details": "Found 2 Period costumes",
+      "response_data": null
+    },
+    {
+      "test": "Search Costumes by Text",
+      "success": true,
+      "details": "Found 0 costumes matching 'dress'",
+      "response_data": null
+    },
+    {
+      "test": "Get Costume Detail",
+      "success": true,
+      "details": "",
+      "response_data": {
+        "id": "07ee536c-c8b8-4303-8630-912871896506",
+        "name": "Victorian Era Gown",
+        "description": "Elegant Victorian-era gown with intricate lace details and corset bodice. Perfect for period dramas and historical performances.",
+        "category": "Period",
+        "sizes": [
+          "S",
+          "M",
+          "L"
+        ],
+        "images": [
+          "https://images.unsplash.com/photo-1660862903579-d48ab8cf7803?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwyfHx2aW50YWdlJTIwdmljdG9yaWFuJTIwZHJlc3MlMjBtYW5uZXF1aW58ZW58MHx8fHwxNzY1MzMyMTkwfDA&ixlib=rb-4.1.0&q=85"
+        ],
+        "price_per_day": 150.0,
+        "available": true,
+        "created_at": "2025-12-10T02:09:16.376482Z"
+      }
+    },
+    {
+      "test": "Create Costume (Admin)",
+      "success": true,
+      "details": "",
+      "response_data": {
+        "id": "7f59be66-3bb4-442f-b924-2522e31ccc02",
+        "name": "Test Costume",
+        "description": "A test costume for automated testing",
+        "category": "Modern",
+        "sizes": [
+          "S",
+          "M",
+          "L"
+        ],
+        "images": [
+          "https://example.com/test-costume.jpg"
+        ],
+        "price_per_day": 50.0,
+        "available": true,
+        "created_at": "2025-12-10T02:11:16.356562Z"
+      }
+    },
+    {
+      "test": "Create Booking",
+      "success": true,
+      "details": "",
+      "response_data": {
+        "id": "d405c270-5811-4de5-8b71-05cfd75510df",
+        "user_email": "testuser_021114@test.com",
+        "user_name": "Test User",
+        "costume_id": "7f59be66-3bb4-442f-b924-2522e31ccc02",
+        "costume_name": "Test Costume",
+        "start_date": "2025-12-17",
+        "end_date": "2025-12-20",
+        "size": "M",
+        "notes": "Test booking for automated testing",
+        "status": "pending",
+        "created_at": "2025-12-10T02:11:16.429452Z"
+      }
+    },
+    {
+      "test": "Get User Bookings",
+      "success": true,
+      "details": "Found 1 bookings",
+      "response_data": null
+    },
+    {
+      "test": "Get Admin Bookings",
+      "success": true,
+      "details": "Found 1 total bookings",
+      "response_data": null
+    },
+    {
+      "test": "Unauthorized Access - User Bookings",
+      "success": false,
+      "details": "Should have returned 401",
+      "response_data": null
+    },
+    {
+      "test": "Unauthorized Access - Admin Endpoint",
+      "success": false,
+      "details": "Should have returned 403",
+      "response_data": null
+    }
+  ]
+}
